@@ -1,0 +1,445 @@
+/* Asi se hacen comentarios */
+
+/* CSS INDEX.HTML-------------------------------------------------------------------------------------------*/
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #ffffff; /* Texto en blanco */
+    font-family: Arial, sans-serif;
+}
+
+/* El header*/
+#encabezado {
+    margin: 20px; 
+    background-color: #1c1c1c; /* Fondo gris oscuro*/
+    /*background: radial-gradient(circle, #555555, #1c1c1c);*/ /* Fondo degradado oscuro*/
+    color: #ffffff; /*Texto en blanco */
+    padding: 1px;
+    text-align: center;/*Texto al centro*/
+}
+
+
+#Titulo {
+    margin-top: 15px;/*Margen con el tope de la web*/
+    width: 400px;/*Tamaño del logo */
+    height: auto;/*Tamaño del logo */
+}
+
+#Subtitulo {
+    font-size: 1.5em; /* preguntar Alberto porque si pongo "em" se hace mas grande un font-size que sin "em" */
+    color: #cccccc; /*Gris claro */
+    text-decoration: underline;
+}
+
+
+/* Seccion principal de la web -------------------------------------------------------------------------------*/
+main {
+    padding: 20px;
+}
+
+
+#Menu {
+    padding: 20px;
+    text-align: center;    
+    margin-bottom: 15px;
+    background-color: #1c1c1c; /* Fondo gris oscuro*/
+    border: 2px solid #1c1c1c;
+}
+
+.menu-botones {
+    /*background-color: #e0e0e0; /* Color clarito */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;/* Para que cambie la forma del raton al ponernos encima */
+    transition: background-color 0.3s; /* Hace una transicion mas lenta de color.Mola */
+    text-decoration: none; /* Quitamos el subrallado ya que no son botones reales, sino links y por eso salen subrallados */
+    border: 2px solid #1c1c1c; /* Borde gris oscuro*/   
+}
+
+.menu-botones:hover {/*Esto permite la transicion de color al pasar el raton por encima*/
+    background-color: #cc0000; /* Rojo al pasar el raton + letras en blanco*/ 
+    color: #ffffff;
+}
+
+#portada {
+    width: 100%;
+    border: 2px solid #444444; /* Borde gris oscuro*/   
+}
+
+/* Los textos y tal... */
+.mid article{
+    margin-top: 100px;
+}
+
+.TitulosBlog {
+    text-align: center;
+    color: #1c1c1c; /* Títulos en casi negro */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.infoBlog {
+    color: #000000; /* Texto en negro */
+    font-size: 1.2em;
+    line-height: 1.6;/*Espacio entre lineas*/
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.ContenedorPresidente{
+    margin-top: 100px;
+    display: flex; /* Esto hace posible separar en 2 mitades la web*/
+    align-items: center;/* Centra las cosas de dentro verticalmente */
+    margin-bottom: 20px;
+}
+
+.ContenedorPresidente img{
+    margin-left: 20px; /* Espacio entre la imagen y el borde */
+    width: 700px; 
+}
+
+.ContenedorPresidente div {
+    margin-left: 200px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos (h1 y p) en columna */
+}
+
+.ContenedorPresidente h1{
+    color: #1c1c1c; /* Color en casi negro */
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.ContenedorPresidente p{
+    color: #1c1c1c; /* El color en casi negro */
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+.ContenedorActualidad{
+    margin-top: 100px;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ContenedorActualidad img{
+    margin-left: 200px;
+    margin-right: 20px;
+    align-items: right;
+    height: 400px;
+    width: auto;
+    /*height: auto;*/
+}
+
+.ContenedorActualidad div {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos (h1 y p) en columna */
+}
+
+.ContenedorActualidad h1{
+    color: #1c1c1c; /* Color en casi negro */
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.ContenedorActualidad p{
+    color: #1c1c1c; /* El color en casi negro */
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* El footer*/
+.footer {
+    display: flex;/*Separa el footer en trozos*/
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+.footer #Pie{
+    flex: 1;/*Cada trozo ocupa 1 parte igual*/
+    flex-direction: column;/* Para que sea tipo columna vertical y no horizontal */    
+    color:#ffffff;
+    text-align: right;
+    /*border: 2px solid #eb0000; */
+    
+}
+
+.footer #Contacto{
+    flex: 1;/*Cada trozo ocupa 1 parte igual*/
+    flex-direction: column;/* Para que sea tipo columna vertical y no horizontal */
+    /*border: 2px solid #eb0000; */
+    
+}
+
+.footer div{
+    flex: 1;/*Cada trozo ocupa 1 parte igual*/
+    flex-direction: column;/* Para que sea tipo columna vertical y no horizontal */
+    /*border: 2px solid #eb0000; */
+    
+
+}
+
+/*Los botones para subir y bajar más rapido */
+#Ancla1 {
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    border: 2px solid #1c1c1c;
+}
+
+#Ancla1:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+#Final {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#Ancla2{
+    
+    background-color: #e0e0e0; 
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    border: 2px solid #1c1c1c;
+    
+}
+
+#Ancla2:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+
+/* CSS HORARIO.HTML-------------------------------------------------------------------------------------------*/
+
+.horario {
+    margin-top: 100px;
+    text-align: center;    
+}
+
+.tabla{   
+    margin-top: 60px;
+    display: flex;
+    justify-content: center; /* Pra centrar la tabla horizontalmente*/
+    align-items: center; /* Para centrar la tabla vertical*/ 
+    color: #000000
+}
+
+.tablas{
+    border: 2px solid #1c1c1c;
+}
+.tablas th, td{   
+    padding: 15px;
+    border: 2px solid #1c1c1c;
+}
+
+.tablas th{
+    background-color: #e0e0e0;
+}
+
+.TitulosBlog3 {
+    margin-top: 100px;
+    text-align: center;
+    color: #1c1c1c; /* Títulos en casi negro */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.video{
+    background-color: rgb(0, 0, 0);    
+    display: flex;
+    justify-content: center; /* Pra centrar la tabla horizontalmente*/
+    align-items: center;
+     
+}
+
+/* CSS CategoriasReglas.HTML-------------------------------------------------------------------------------------------*/
+
+.tabla1{
+    display: flex;
+    justify-content: space-between; /* Para que las talbas esten separadas */
+    max-width: 1200px; 
+    margin: auto; 
+    color: #000000    
+}
+
+.infoBlog2 {
+    margin-top: 20px;
+    margin-left: 250px;
+    color: #000000; /* Texto en negro */
+    font-size: 1.2em;
+    line-height: 1.6;/*Espacio entre lineas*/
+    text-align: left;
+}
+
+.TitulosBlog2 {
+    margin-top: 20px;
+    margin-left: 240px;
+    text-align: left;
+    color: #1c1c1c; /* Títulos en casi negro */
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* CSS contacto.html----------------------------------------------------------------------*/
+
+.SeccionContacto {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    background-color: #fff;
+    color: #000000;
+    padding: 40px;
+    width: 500px;
+    border: 2px solid #1c1c1c;
+}
+
+
+.TituloContacto {
+    color: #1c1c1c;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1c1c1c;
+}
+
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* redondea bordes y mola */
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #00ad00;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #006900;
+}
+
+button[type="reset"] {
+    background-color: #ff1100;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button[type="reset"]:hover {
+    background-color: #b10c00;
+}
+
+input[type="radio"] {
+    margin-top: 5px;
+}
+
+textarea {
+    resize:vertical;/* solo expande hacia bajo que sino queda feo*/
+}
+
+/* CSS luchadores.html--------------------------------------------------------------------------*/
+
+
+.luchador{
+    background-color: #f4f4f9;   
+    border: 4px solid #1c1c1c;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin: 30px 100px; 
+}
+
+.luchador img{
+    margin-top: 60px;    
+    height: 600px;
+    margin-left: 120px;
+}
+
+.texto{
+    width: 1000px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid #5f5f5f;
+    margin-right: 120px;
+          
+}
+
+.infoAtletas{
+    border-radius: 5px;
+    background-color: #5f5f5f;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.infoAtletas2{
+    margin-left: 10px;
+    text-align: left;
+    color: #5f5f5f;
+    font-size: 1.2em;
+    font-weight: bold;
+}

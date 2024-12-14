@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/ico"/>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <header id="encabezado">
+        <img id="Titulo" src="imagenes/ufclogo.png">
+        <h4 id="Subtitulo">Ultimate Fighting Championship</h4>        
+    </header>
+
+    <main id="PrincipioWeb">
+        <section id="Menu">
+            <nav id="Botones">
+                <a href="index.html" class="menu-botones">HOME</a>
+                <a href="luchadores.html" class="menu-botones">LUCHADORES</a>
+                <a href="CategoriasReglas.html" class="menu-botones">CATEGORIAS Y REGLAS</a>
+                <a href="horario.html" class="menu-botones">HORARIO</a>
+                <a href="contacto.html" class="menu-botones">CONTACTO</a>
+                <a href="#FinalDeWeb" id="Ancla1">IR AL FINAL DE LA WEB</a>
+                
+            </nav>
+        </section>
+
+        <section>
+            <h1 class="TitulosBlog">FORMULARIO DE CONTACTO</h1>
+        </section>
+
+       <section class="SeccionContacto">
+            <form>
+                <div class="contacto">
+                    <h1 class="TituloContacto">Datos de Contacto</h1>
+                    <label for="Nombre">Nombre:</label>        
+                    <input placeholder="Pon tu Nombre" type="text" name="Nombre" id="Nombre" required>
+                    <br>
+                    <label for="Apellidos">Apellidos:</label>
+                    <input placeholder="Pon tus Apellidos" type="text" name="Apellidos" id="Apellidos">
+                    <br>
+                    <label for="Correo">Email:</label>
+                    <input type="email" id="correo" name="email" autocomplete="off" required>
+                    <br>
+                    <label for="numero">Edad:</label>
+                    <input type="number" id="edad" name="quantity" min="18" max="99" step="1" required>
+                    <br>
+                    <label for="Fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="Fecha" name="bday" max="2006-11-18">
+                    <br>
+                    <h1 class="TituloContacto">Sexo</h1>
+                    <input type="radio" name="genero" value="hombre" checked> Hombre
+                    <br>
+                    <input type="radio" name="genero" value="mujer" checked> Mujer
+                    <br>
+                    <input type="radio" name="genero" value="otro" checked> Otro
+                    <h1 class="TituloContacto">Mensaje</h1>
+                    <textarea name="mensaje" rows="10" cols="10" placeholder="Introduce aqui el mensaje..." required></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <br>
+                    <br>               
+                    <br>
+                    <h1 class="TituloContacto">Borrar campos</h1>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>    
+       </section>
+
+        <section id="Final">
+            <a href="#PrincipioWeb" id="Ancla2">IR AL PRINCIPIO DE LA WEB</a>
+        </section>
+    </main>
+    
+    <footer class="footer" id="FinalDeWeb">
+        <div>
+            <h4 class="Redes">Redes Sociales</h4>
+            <ul class="Redes">
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div>       
+            <h4 id="Contacto">Contacto</h4>
+            <ul>
+                <li>Tel: 666 666 666</li>
+                <li>Email: ufc@alu.edu.gva.es</li>
+                <li>Fax: 777 777 777</li>
+            </ul>
+        </div>         
+        <h4 id="Pie">Yordan Radkov Georgiev</h4> 
+    </footer>
+</body>
+</html>
